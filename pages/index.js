@@ -11,8 +11,6 @@ function Index() {
       <Head>
         <title>Hempstart - Born to Grow</title>
       </Head>
-      <Button>Schedule a meeting</Button>
-      <Button secondary>Schedule a meeting</Button>
       <style jsx>{``}</style>
     </main>
   )
