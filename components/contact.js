@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact">
       <h2>Contact us</h2>
       <p>Award winning cannabis starts with a message</p>
-      <form action="">
+      <form action="" method="POST">
         <label htmlFor="name" className="name">
           Name
           <input name="name" type="text" />
@@ -18,14 +18,14 @@ export default function Contact() {
           Message
           <textarea name="message" id="" cols="30" rows="10" />
         </label>
-        <Button>Contact us</Button>
+        <Button type="submit">Contact us</Button>
       </form>
       <style jsx>{`
         section {
           display: flex;
           flex-direction: column;
           align-items: center;
-          height: 100vh;
+          height: var(--full-height);
           margin: 0 auto;
           padding: var(--gap-double);
           position: relative;
@@ -39,7 +39,7 @@ export default function Contact() {
           content: "";
           display: block;
           width: 100%;
-          height: 100%;
+          height: 110%;
           background: #eeefe7;
           position: absolute;
           left: 0;
@@ -77,6 +77,7 @@ export default function Contact() {
 
         input {
           width: 350px;
+          max-width: 100%;
         }
 
         textarea {
@@ -116,6 +117,18 @@ export default function Contact() {
           grid-column: span 2;
           margin: 0 auto;
           width: 250px;
+        }
+
+        @media (max-width: 850px) {
+          form {
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-areas: "name" "email" "message";
+          }
+          textarea,
+          input {
+            width: auto;
+          }
         }
       `}</style>
     </section>

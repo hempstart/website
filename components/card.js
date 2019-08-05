@@ -1,4 +1,4 @@
-export default function Card({ caption }) {
+export default function Card({ image, alt, caption }) {
   return (
     <figure>
       <svg
@@ -22,11 +22,11 @@ export default function Card({ caption }) {
         </p>
         <a href="#contact">Contact us</a>
       </div>
-      <img src="/static/images/hero.png" alt="" />
+      <img src={image} alt={alt} />
       <figcaption>{caption}</figcaption>
       <style jsx>{`
         figure {
-          max-width: 350px;
+          width: 100%;
           max-height: 550px;
           transition: box-shadow 300ms ease;
           cursor: pointer;
@@ -35,7 +35,7 @@ export default function Card({ caption }) {
         }
 
         figure img {
-          max-width: 100%;
+          width: 100%;
           height: 550px;
           object-fit: cover;
         }
@@ -62,7 +62,7 @@ export default function Card({ caption }) {
         }
 
         figure:hover:before {
-          opacity: 0.5;
+          opacity: 0.8;
         }
 
         figure:hover .inner {
@@ -97,6 +97,15 @@ export default function Card({ caption }) {
           color: var(--background);
           text-decoration: none;
           letter-spacing: 3px;
+        }
+
+        @media (max-height: 850px) {
+          figure {
+            max-height: auto;
+          }
+          figure img {
+            height: 400px;
+          }
         }
       `}</style>
     </figure>

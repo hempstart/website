@@ -1,6 +1,6 @@
-function Button({ children, secondary = false }) {
+function Button({ children, secondary = false, type }) {
   return (
-    <button>
+    <button type={type}>
       {children}
       <style jsx>{`
         button {
@@ -20,6 +20,17 @@ function Button({ children, secondary = false }) {
 
         button:hover {
           opacity: 0.9;
+        }
+
+        @media (max-width: 850px) {
+          button {
+            width: 100%;
+          }
+        }
+        @media (max-width: 320px) {
+          button {
+            font-size: 12px;
+          }
         }
       `}</style>
     </button>

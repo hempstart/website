@@ -31,6 +31,26 @@ export default function Hero() {
         p {
           max-width: 45%;
         }
+
+        @media (max-width: 850px) {
+          section {
+            min-height: 80vh;
+            height: auto;
+          }
+          h1,
+          p {
+            margin-bottom: var(--gap);
+          }
+          p {
+            max-width: 80%;
+          }
+        }
+
+        @media (max-width: 320px) {
+          h1 {
+            font-size: 40px;
+          }
+        }
       `}</style>
     </section>
   )

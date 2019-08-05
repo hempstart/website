@@ -46,6 +46,12 @@ export default function Nav({ noCta = false }) {
         li:last-child {
           margin-right: 0;
         }
+
+        @media (max-width: 850px) {
+          nav {
+            display: none;
+          }
+        }
       `}</style>
     </nav>
   )

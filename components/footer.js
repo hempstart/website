@@ -39,6 +39,9 @@ export default function Footer() {
         </p>
       </footer>
       <style jsx>{`
+        section {
+          padding-top: var(--gap);
+        }
         .cta {
           display: flex;
           align-items: center;
@@ -77,6 +80,21 @@ export default function Footer() {
           grid-column: 1 / -1;
           width: 100%;
           text-align: center;
+        }
+
+        @media (max-width: 850px) {
+          .cta {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: var(--gap);
+          }
+          .cta .text {
+            margin-bottom: var(--gap);
+          }
+          footer {
+            grid-template-columns: 1fr;
+          }
         }
       `}</style>
     </section>

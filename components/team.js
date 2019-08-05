@@ -9,8 +9,8 @@ export default function Team() {
         category leaders within the cannabis sector.
       </h2>
       <div className="content">
-        <figure>
-          <img src="/static/images/hero.png" alt="" />
+        <figure className="desktop-only">
+          <img src="/static/images/team/babar.png" alt="" />
         </figure>
         <figcaption>
           <p>
@@ -19,6 +19,9 @@ export default function Team() {
             companies/brands poised for rapid growth and deep market
             penetration.
           </p>
+          <figure className="mobile-only">
+            <img src="/static/images/team/babar.png" alt="" />
+          </figure>
           <h4>Babar Khan</h4>
           <h5>Founder and Advisor</h5>
           <Button>Schedule a meeting</Button>
@@ -43,7 +46,7 @@ export default function Team() {
           flex-direction: column;
           align-items: flex-start;
           justify-content: center;
-          height: 100vh;
+          height: var(--full-height);
           max-width: var(--inner-width);
           margin: 0 auto;
           padding: var(--gap);
@@ -90,6 +93,51 @@ export default function Team() {
           top: 0;
           transform: translate(26%, -30%);
           pointer-events: none;
+        }
+
+        .mobile-only {
+          display: none;
+        }
+
+        .desktop-only {
+          display: block;
+        }
+
+        @media (max-width: 850px) {
+          .mobile-only {
+            display: block;
+          }
+
+          .desktop-only {
+            display: none;
+          }
+
+          .content {
+            display: grid;
+            margin-left: 0;
+            grid-gap: var(--gap-half);
+            grid-template-columns: 1fr;
+            z-index: 10;
+            margin-top: var(--gap-half);
+          }
+
+          p {
+            max-width: 100%;
+            margin-bottom: 30px;
+          }
+
+          figure {
+            box-shadow: var(--offset-shadow);
+            max-width: auto;
+            max-height: 400px;
+            margin: var(--gap-double) auto;
+          }
+
+          figure img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+          }
         }
       `}</style>
     </section>

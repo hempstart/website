@@ -46,6 +46,7 @@
   --foreground: #000;
   --inner-width: 1500px;
   --full-width: 100vw;
+  --full-height: 100vh;
   --gap: 80px;
   --gap-half: 40px;
   --gap-double: 160px;
@@ -64,6 +65,7 @@ body {
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   margin: 0;
+  overflow-x: hidden;
 }
 
 *::-moz-selection {
@@ -178,4 +180,23 @@ p {
   line-height: 1.5em;
   margin: 0;
   font-family: "Futura New Book";
+}
+
+@media (max-width: 1500px) {
+  :root {
+    --inner-width: 1200px;
+    --gap: 40px;
+    --gap-half: 20px;
+    --gap-double: 80px;
+  }
+}
+
+@media (max-width: 850px) {
+  :root {
+    --inner-width: 100vw;
+    --gap: 20px;
+    --gap-half: 10px;
+    --gap-double: 40px;
+    --full-height: auto;
+  }
 }
