@@ -11,7 +11,7 @@ const sendEmail = e => {
   axios({
     method: "post",
     url:
-      "http://getsimpleform.com/messages/ajax?form_api_token=5c0a91f87d000cb37cc1690cd3110d44",
+      "https://getsimpleform.com/messages/ajax?form_api_token=5c0a91f87d000cb37cc1690cd3110d44",
     data: {
       name: name,
       email: email,
