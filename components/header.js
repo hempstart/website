@@ -7,6 +7,7 @@ export default function Header() {
     <header>
       <Logo />
       <Nav />
+      <MobileMenu />
       <style jsx>{`
         header {
           display: flex;
@@ -17,9 +18,13 @@ export default function Header() {
           margin: 0 auto;
         }
 
-        @media (max-width: 850px) {
+        @media (max-width: 1024px) {
           header {
-            padding: 25px 0;
+            padding: 25px 20px;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            background: var(--background);
           }
         }
       `}</style>

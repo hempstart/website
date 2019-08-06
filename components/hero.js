@@ -36,6 +36,7 @@ export default function Hero() {
           section {
             min-height: 80vh;
             height: auto;
+            padding-top: 88px;
           }
           h1,
           p {

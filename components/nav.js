@@ -36,7 +36,7 @@ export default function Nav({ noCta = false }) {
 
         li {
           display: inline-block;
-          margin: 0 3em;
+          margin: 0 2vw;
         }
 
         li:first-child {

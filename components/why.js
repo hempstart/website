@@ -127,22 +127,7 @@ export default function Why() {
             min-height: 85vh;
             height: 100%;
             width: 100%;
-          }
-        }
-
-        @media (max-width: 850px) {
-          h2 {
-            max-width: 90%;
-          }
-          .content {
-            padding: 0 var(--gap);
-          }
-          .images {
-            position: relative;
-            display: flex;
-            min-height: 65vh;
-            height: 100%;
-            width: 100%;
+            margin-top: -200px;
           }
           figure:nth-child(1) {
             max-width: 50vw;
@@ -172,6 +157,23 @@ export default function Why() {
           figure:nth-child(2):hover,
           figure:hover {
             transform: none;
+          }
+        }
+
+        @media (max-width: 850px) {
+          h2 {
+            max-width: 90%;
+          }
+          .content {
+            padding: 0 var(--gap);
+          }
+          .images {
+            position: relative;
+            display: flex;
+            min-height: 65vh;
+            height: 100%;
+            width: 100%;
+            margin-top: -100px;
           }
         }
       `}</style>
