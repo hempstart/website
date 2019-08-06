@@ -70,14 +70,13 @@ export default function Why() {
           right: 0;
           height: 100%;
           width: 100%;
+          pointer-events: none;
         }
 
         figure {
           position: absolute;
           margin: 0;
           overflow: hidden;
-          transition: transform 300ms ease-in-out;
-          will-change: transform;
         }
 
         figure:nth-child(1) {
@@ -86,8 +85,6 @@ export default function Why() {
           right: 0;
           bottom: 15%;
           z-index: 100;
-          transform: perspective(1000px) rotate(-3deg) rotateY(-18deg)
-            rotateX(16deg);
         }
         figure:nth-child(2) {
           max-width: 400px;
@@ -95,8 +92,6 @@ export default function Why() {
           bottom: -20%;
           left: 50%;
           z-index: 50;
-          transform: perspective(1000px) rotate(0deg) rotateY(5deg)
-            rotateX(5deg) translateX(-50%);
         }
         figure:nth-child(3) {
           max-width: 300px;
@@ -104,15 +99,6 @@ export default function Why() {
           bottom: -10%;
           right: calc(var(--gap) * -1);
           z-index: 10;
-        }
-
-        figure:hover {
-          transform: perspective(1000px) rotate(0) rotateY(0) rotateX(0);
-        }
-
-        figure:nth-child(2):hover {
-          transform: perspective(1000px) rotate(0) rotateY(0) rotateX(0)
-            translateX(-50%);
         }
 
         img {
@@ -135,7 +121,6 @@ export default function Why() {
             right: 0;
             top: 25%;
             bottom: initial;
-            transform: none;
           }
           figure:nth-child(2) {
             max-width: 45vw;
@@ -144,7 +129,6 @@ export default function Why() {
             bottom: initial;
             left: 0;
             z-index: 50;
-            transform: none;
           }
           figure:nth-child(3) {
             max-width: 26vw;
@@ -153,10 +137,6 @@ export default function Why() {
             bottom: initial;
             right: calc(var(--gap) * -1);
             z-index: 10;
-          }
-          figure:nth-child(2):hover,
-          figure:hover {
-            transform: none;
           }
         }
 
