@@ -59,10 +59,10 @@ export default class HempstartDoc extends Document {
           />
           <meta property="og:url" content="https://hempstart.co" />
           <meta property="og:site_name" content="Born to Grow | hempstart.co" />
-          <meta property="og:image" content="./static/OG.png" />
+          <meta property="og:image" content="./static/icons/OG.png" />
           <meta
             property="og:image:secure_url"
-            content="https://hempstart.co/static/OG.png"
+            content="https://hempstart.co/static/icons/OG.png"
           />
 
           <meta name="twitter:card" content="summary" />
@@ -73,7 +73,7 @@ export default class HempstartDoc extends Document {
           <meta name="twitter:title" content="Born to Grow | hempstart.co" />
           <meta
             name="twitter:image"
-            content="https://hempstart.co/static/OG.png"
+            content="https://hempstart.co/static/icons/OG.png"
           />
         </Head>
 
