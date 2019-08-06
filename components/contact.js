@@ -19,6 +19,9 @@ const sendEmail = e => {
     }
   })
     .then(() => {
+      document.getElementsByName("name")[0].value = ""
+      document.getElementsByName("email")[0].value = ""
+      document.getElementsByName("message")[0].value = ""
       alert("Thank you for contacting us - Hempstart")
     })
     .catch(error => {
