@@ -16,6 +16,15 @@ export default function Header() {
           padding: 50px 0;
           max-width: var(--inner-width);
           margin: 0 auto;
+          opacity: 0;
+          animation: fadein 400ms ease-in-out forwards;
+          animation-delay: 200ms;
+        }
+
+        @keyframes fadein {
+          to {
+            opacity: 1;
+          }
         }
 
         @media (max-width: 1024px) {

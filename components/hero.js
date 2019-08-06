@@ -20,6 +20,9 @@ export default function Hero() {
           max-width: var(--inner-width);
           margin: 0 auto;
           padding: var(--gap);
+          opacity: 0;
+          animation: fadein 400ms ease-in-out forwards;
+          animation-delay: 600ms;
         }
 
         h1,
@@ -44,6 +47,12 @@ export default function Hero() {
           }
           p {
             max-width: 80%;
+          }
+        }
+
+        @keyframes fadein {
+          to {
+            opacity: 1;
           }
         }
 

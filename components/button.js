@@ -1,6 +1,14 @@
+const onClick = () => {
+  window.open(
+    "https://calendly.com/babarkhan",
+    "Schedule a meeting",
+    "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, height=650, width=500, centerscreen=yes"
+  )
+}
+
 function Button({ children, secondary = false, type }) {
   return (
-    <button type={type}>
+    <button type={type} onClick={onClick}>
       {children}
       <style jsx>{`
         button {
