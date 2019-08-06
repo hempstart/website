@@ -44,6 +44,12 @@ export default class HempstartDoc extends Document {
             sizes="16x16"
             href="./static/icons/favicon-16x16.png"
           />
+          <link
+            rel="shortcut icon"
+            href="./static/favicon.ico"
+            type="image/x-icon"
+          />
+          <link rel="icon" href="./static/favicon.ico" type="image/x-icon" />
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Born to grow" />
@@ -53,7 +59,7 @@ export default class HempstartDoc extends Document {
           />
           <meta property="og:url" content="https://hempstart.co" />
           <meta property="og:site_name" content="Born to Grow | hempstart.co" />
-          <meta property="og:image" content="/static/OG.png" />
+          <meta property="og:image" content="./static/OG.png" />
           <meta
             property="og:image:secure_url"
             content="https://hempstart.co/static/OG.png"
@@ -62,12 +68,9 @@ export default class HempstartDoc extends Document {
           <meta name="twitter:card" content="summary" />
           <meta
             name="twitter:description"
-            content="We're a brand creators, we're code hypebeasts, we inhale your story and exhale digital experiences."
+            content="To shape the cannabis industry’s future by striving for constant evolution in products, places, and people."
           />
-          <meta
-            name="twitter:title"
-            content="Our work is serious, we are not | hempstart.co"
-          />
+          <meta name="twitter:title" content="Born to Grow | hempstart.co" />
           <meta
             name="twitter:image"
             content="https://hempstart.co/static/OG.png"
