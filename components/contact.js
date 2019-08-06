@@ -5,7 +5,10 @@ export default function Contact() {
     <section id="contact">
       <h2>Contact us</h2>
       <p>Award winning cannabis starts with a message</p>
-      <form action="/api/contact" method="POST">
+      <form
+        action="https://getsimpleform.com/messages?form_api_token=5c0a91f87d000cb37cc1690cd3110d44"
+        method="POST"
+      >
         <label htmlFor="name" className="name">
           Name
           <input name="name" type="text" />

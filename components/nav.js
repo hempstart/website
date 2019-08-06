@@ -25,6 +25,7 @@ export default function Nav({ noCta = false }) {
       <style jsx>{`
         nav {
           display: flex;
+          align-items: center;
         }
 
         a {
@@ -32,6 +33,13 @@ export default function Nav({ noCta = false }) {
           text-transform: uppercase;
           text-decoration: none;
           font-weight: bold;
+          transition: background 200ms ease;
+          padding: 20px;
+          margin: -20px;
+        }
+
+        a:hover {
+          background: rgba(0, 99, 65, 0.15);
         }
 
         li {

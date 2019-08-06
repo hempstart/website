@@ -1,6 +1,6 @@
 const onClick = () => {
   window.open(
-    "https://calendly.com/babarkhan",
+    "https://calendly.com/hempstart",
     "Schedule a meeting",
     "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, height=650, width=500, centerscreen=yes"
   )
