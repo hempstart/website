@@ -1,14 +1,36 @@
 import Button from "./button"
+import axios from "axios"
 
+const sendEmail = e => {
+  e.preventDefault()
+
+  const name = document.getElementsByName("name")[0].value
+  const email = document.getElementsByName("email")[0].value
+  const message = document.getElementsByName("message")[0].value
+
+  axios({
+    method: "post",
+    url:
+      "http://getsimpleform.com/messages/ajax?form_api_token=5c0a91f87d000cb37cc1690cd3110d44",
+    data: {
+      name: name,
+      email: email,
+      message: message
+    }
+  })
+    .then(() => {
+      alert("Thank you for contacting us - Hempstart")
+    })
+    .catch(error => {
+      console.log(error)
+    })
+}
 export default function Contact() {
   return (
     <section id="contact">
       <h2>Contact us</h2>
       <p>Award winning cannabis starts with a message</p>
-      <form
-        action="https://getsimpleform.com/messages?form_api_token=5c0a91f87d000cb37cc1690cd3110d44"
-        method="POST"
-      >
+      <form>
         <label htmlFor="name" className="name">
           Name
           <input name="name" type="text" />
@@ -21,7 +43,9 @@ export default function Contact() {
           Message
           <textarea name="message" id="" cols="30" rows="10" />
         </label>
-        <Button type="submit">Contact us</Button>
+        <Button type="submit" action={sendEmail}>
+          Contact us
+        </Button>
       </form>
       <style jsx>{`
         section {

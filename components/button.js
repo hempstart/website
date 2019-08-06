@@ -6,9 +6,9 @@ const onClick = () => {
   )
 }
 
-function Button({ children, secondary = false, type }) {
+function Button({ action, children, secondary = false, type }) {
   return (
-    <button type={type} onClick={onClick}>
+    <button type={type} onClick={action ? action : onClick}>
       {children}
       <style jsx>{`
         button {
