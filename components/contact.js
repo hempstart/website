@@ -1,5 +1,7 @@
 import Button from "./button"
-import axios from "axios"
+
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbztTWYj0N1LX41G1YTqbFm3yxo3hYfXd6DanZthISOe7lMfC4g/exec"
 
 const sendEmail = e => {
   e.preventDefault()
@@ -7,31 +9,28 @@ const sendEmail = e => {
   const name = document.getElementsByName("name")[0].value
   const email = document.getElementsByName("email")[0].value
   const message = document.getElementsByName("message")[0].value
+  const badBot = document.getElementsByClassName("please-dont")[0].checked
 
-  axios({
-    crossdomain: true,
-    headers: {
-      "Access-Control-Allow-Origin": "*"
-    },
-    withCredentials: false,
-    method: "post",
-    url:
-      "https://getsimpleform.com/messages/ajax?form_api_token=5c0a91f87d000cb37cc1690cd3110d44",
-    data: {
-      name: name,
-      email: email,
-      message: message
-    }
-  })
-    .then(() => {
-      document.getElementsByName("name")[0].value = ""
-      document.getElementsByName("email")[0].value = ""
-      document.getElementsByName("message")[0].value = ""
-      alert("Thank you for contacting us - Hempstart")
+  const values = {
+    name: name,
+    email: email,
+    message: message
+  }
+
+  if (!badBot) {
+    fetch(SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify(values),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }).then(() => {
+      alert("Thanks, we will get in touch soon - Hempstart")
     })
-    .catch(error => {
-      console.log(error)
-    })
+  } else {
+    alert("Bad bad bot!")
+  }
 }
 export default function Contact() {
   return (
@@ -51,6 +50,13 @@ export default function Contact() {
           Message
           <textarea name="message" id="" cols="30" rows="10" />
         </label>
+        <input
+          className="please-dont"
+          type="checkbox"
+          value="1"
+          tabIndex="-1"
+          autoComplete="nope"
+        />
         <Button type="submit" action={sendEmail}>
           Contact us
         </Button>
@@ -111,7 +117,6 @@ export default function Contact() {
         }
 
         input {
-          width: 350px;
           max-width: 100%;
         }
 
@@ -148,21 +153,33 @@ export default function Contact() {
           grid-area: message;
         }
 
+        .please-dont {
+          opacity: 0;
+          transform: translate(-500000px);
+        }
+
         form :global(button) {
           grid-column: span 2;
           margin: 0 auto;
           width: 250px;
         }
 
+        @media (min-width: 851px) {
+          input {
+            width: 350px;
+          }
+        }
+
         @media (max-width: 850px) {
+          section {
+            padding: var(--gap-double) var(--gap);
+          }
           form {
             width: 100%;
             grid-template-columns: 1fr;
+            grid-gap: 0;
+            grid-row-gap: var(--gap);
             grid-template-areas: "name" "email" "message";
-          }
-          textarea,
-          input {
-            width: auto;
           }
         }
       `}</style>

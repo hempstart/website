@@ -52,6 +52,7 @@ export default function Footer() {
           color: var(--background);
           padding: var(--gap-half) 100px;
           position: relative;
+          overflow: hidden;
         }
 
         .cta .background {
