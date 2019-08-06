@@ -9,7 +9,10 @@ const sendEmail = e => {
   const message = document.getElementsByName("message")[0].value
 
   axios({
-    withCredentials: true,
+    crossdomain: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*"
+    },
     method: "post",
     url:
       "https://getsimpleform.com/messages/ajax?form_api_token=5c0a91f87d000cb37cc1690cd3110d44",
