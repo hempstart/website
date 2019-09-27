@@ -131,14 +131,14 @@ export default function Why() {
           figure:nth-child(1) {
             max-width: 50vw;
             height: 61vw;
-            right: 0;
-            top: 35%;
+            right: 10%;
+            top: 40%;
             bottom: initial;
           }
           figure:nth-child(2) {
             max-width: 45vw;
             height: 45vw;
-            top: 50%;
+            top: 80%;
             bottom: initial;
             left: 0;
             z-index: 50;
