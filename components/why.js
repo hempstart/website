@@ -79,7 +79,7 @@ export default function Why() {
         .images {
           position: absolute;
           display: flex;
-          top: 20%;
+          top: 0;
           right: 0;
           height: 100%;
           width: 100%;
