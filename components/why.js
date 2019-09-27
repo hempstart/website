@@ -155,7 +155,7 @@ export default function Why() {
 
         @media (max-width: 850px) {
           h2 {
-            max-width: 80%;
+            max-width: 90%;
           }
           p {
             max-width: 70%;
