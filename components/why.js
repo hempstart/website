@@ -4,19 +4,24 @@ import Button from "./button"
 export default function Why() {
   return (
     <section id="why">
-      <h5 className="label">Why grow with us</h5>
-      <h2>
-        Highly profitable cannabis business needs{" "}
-        <span className="highlight">
-          <TextLoop children={["planification", "strategy"]} />
-        </span>
-      </h2>
-      <div className="content">
+      <div className="title">
+        <h5 className="label">Why grow with us</h5>
+        <h2>
+          Highly profitable cannabis business needs{" "}
+          <span className="highlight">
+            <TextLoop children={["planification", "strategy"]} />
+          </span>
+        </h2>
         <p>
-          To shape the cannabis industry’s future by striving for constant
-          evolution in products, places, and people.
+          Our network is second to none, we know the drill and all the details
+          of this thriving business. Why settle up with just an advisor?
+          Hempstart will share all its expertise and knowledge in the area to
+          match your expectations and needs. Focus on your project, We focus our
+          efforts on you and your stress-free constant growth.
         </p>
         <Button>Schedule a meeting</Button>
+      </div>
+      <div className="content">
         <div className="images">
           <figure>
             <img src="/static/images/why/1.png" alt="" />
@@ -36,29 +41,37 @@ export default function Why() {
           align-items: flex-start;
           justify-content: center;
           height: var(--full-height);
-          max-width: var(--inner-width);
-          margin: 0 auto;
           margin-top: var(--gap);
-          padding: var(--gap);
+          background-color: #eeefe7;
         }
 
         .content {
-          padding: 0 var(--gap-double);
+          max-width: var(--inner-width);
+          margin: 0 auto;
           position: relative;
-          min-height: 600px;
+          min-height: 450px;
           width: 100%;
         }
 
+        .title {
+          max-width: var(--inner-width);
+          margin: 0 auto;
+          margin-bottom: -100px;
+          padding: var(--gap);
+        }
+
         h2 {
+          max-width: 100%;
           margin-bottom: var(--gap-half);
         }
 
         p {
-          max-width: 28ch;
+          max-width: 60%;
           margin-bottom: 30px;
         }
 
         .highlight {
+          display: inline-block;
           color: var(--color-secondary);
           text-transform: uppercase;
         }
@@ -66,7 +79,7 @@ export default function Why() {
         .images {
           position: absolute;
           display: flex;
-          top: 0;
+          top: 20%;
           right: 0;
           height: 100%;
           width: 100%;
@@ -119,7 +132,7 @@ export default function Why() {
             max-width: 50vw;
             height: 61vw;
             right: 0;
-            top: 25%;
+            top: 35%;
             bottom: initial;
           }
           figure:nth-child(2) {
@@ -142,7 +155,10 @@ export default function Why() {
 
         @media (max-width: 850px) {
           h2 {
-            max-width: 90%;
+            max-width: 80%;
+          }
+          p {
+            max-width: 70%;
           }
           .content {
             padding: 0 var(--gap);

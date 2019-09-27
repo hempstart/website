@@ -137,33 +137,34 @@ h5 {
 }
 
 h1 {
-  font-size: calc(52px + (135 - 52) * (100vw - 375px) / (1920 - 375));
+  font-size: calc(52px + (135 - 52) * (100vw - 375px) / (1700 - 375));
   line-height: 0.67em;
 }
 
 h2 {
   color: var(--color-primary);
-  font-size: calc(28px + (80 - 28) * (100vw - 375px) / (1920 - 375));
+  font-size: calc(28px + (80 - 28) * (100vw - 375px) / (1700 - 375));
   line-height: 1em;
 }
 
 h3 {
-  font-size: calc(28px + (46 - 28) * (100vw - 375px) / (1920 - 375));
+  font-size: calc(28px + (46 - 28) * (100vw - 375px) / (1700 - 375));
   line-height: 1.74em;
 }
 
 h4 {
-  font-size: calc(24px + (36 - 24) * (100vw - 375px) / (1920 - 375));
+  font-size: calc(24px + (36 - 24) * (100vw - 375px) / (1700 - 375));
   line-height: 1em;
 }
 
 h5 {
-  font-size: calc(16px + (20 - 16) * (100vw - 375px) / (1920 - 375));
+  font-size: calc(16px + (20 - 16) * (100vw - 375px) / (1700 - 375));
   line-height: 2em;
   margin-bottom: 20px;
 }
 
 h5.label {
+  display: inline-block;
   position: relative;
   color: var(--foreground);
 }

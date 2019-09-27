@@ -1,4 +1,4 @@
-export default function Card({ image, alt, caption }) {
+export default function Card({ image, alt, caption, text }) {
   return (
     <figure>
       <svg
@@ -16,10 +16,7 @@ export default function Card({ image, alt, caption }) {
         />
       </svg>
       <div className="inner">
-        <p>
-          To shape the cannabis industry’s future by striving for constant
-          evolution in products, places, and people.
-        </p>
+        <p>{text}</p>
         <a href="#contact">Contact us</a>
       </div>
       <img src={image} alt={alt} />

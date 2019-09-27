@@ -3,6 +3,7 @@ import Head from "next/head"
 import Button from "../components/button"
 import Header from "../components/header"
 import Hero from "../components/hero"
+import Services from "../components/services"
 import Why from "../components/why"
 import How from "../components/how"
 import Team from "../components/team"
@@ -20,12 +21,15 @@ function Index() {
       </Head>
       <Header />
       <Hero />
+      <Services />
       <Why />
       <How />
       <Team />
       <Contact />
       <Footer />
-      <p className="copy">2019 Hempstart. All rights reserverd</p>
+      <p className="copy">
+        {new Date().getFullYear()} Hempstart. All rights reserverd
+      </p>
       <style jsx>{`
         .copy {
           background: #1c3d38;

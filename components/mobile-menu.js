@@ -18,6 +18,9 @@ export default function MobileMenu() {
               <a href="#why">Why</a>
             </li>
             <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
               <a href="#how">How</a>
             </li>
             <li>

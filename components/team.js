@@ -122,7 +122,7 @@ export default function Team() {
           }
 
           p {
-            max-width: 100%;
+            max-width: 90%;
             margin-bottom: 30px;
           }
 

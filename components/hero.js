@@ -5,8 +5,9 @@ export default function Hero() {
     <section>
       <h1>Born to Grow</h1>
       <p>
-        To shape the cannabis industry’s future by striving for constant
-        evolution in products, places, and people.
+        We help entrepreneurs on obtaining Hemp and Cannabis Licenses, and build
+        related businesses, shaping this industry’s future by aspiring for
+        constant evolution in products, places, and people.
       </p>
       <Button secondary>Schedule a meeting</Button>
       <style jsx>{`
@@ -32,7 +33,7 @@ export default function Hero() {
         }
 
         p {
-          max-width: 45%;
+          max-width: 50%;
         }
 
         @media (max-width: 850px) {
@@ -46,7 +47,7 @@ export default function Hero() {
             margin-bottom: var(--gap);
           }
           p {
-            max-width: 80%;
+            max-width: 85%;
           }
         }
 

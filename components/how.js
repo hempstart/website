@@ -7,12 +7,27 @@ export default function How() {
       <div className="inner">
         <h5 className="label">How we solve the problem</h5>
         <h2>We turn cannabis into cash, and cash into cannabis.</h2>
+        <p>
+          Investing in the cannabis industry is not difficult, but since it’s
+          a new environment there are lots of fine print that you will need to
+          take into consideration. We provide safe paths for you to start your
+          business in the industry, grow with us.
+        </p>
         <div className="cards">
-          <Card image="/static/images/how/1.png" caption="Rapid Growth" />
-          <Card image="/static/images/how/2.png" caption="Top Visibility" />
+          <Card
+            image="/static/images/how/1.png"
+            caption="Rapid Growth"
+            text="When any industry is on its early stage growth can be easier, and faster. Contact us and know the possibilities on your state, start your Hemp business today."
+          />
+          <Card
+            image="/static/images/how/2.png"
+            caption="Top Visibility"
+            text="Our brands are bold, intrepid, and focused on their products. That’s how they stand out. Visibility is key on a crowded environment. We have you covered."
+          />
           <Card
             image="/static/images/how/3.png"
             caption="Strategic Partnerships"
+            text="Based on what we learn, we shape strategic partnerships with our clients improving their business market knowledge."
           />
         </div>
       </div>
@@ -24,7 +39,7 @@ export default function How() {
           justify-content: center;
           height: var(--full-height);
           margin: var(--gap-double) auto;
-          padding: var(--gap-double) var(--gap);
+          padding: var(--gap-double) 0;
           position: relative;
         }
 
@@ -56,6 +71,10 @@ export default function How() {
           margin-bottom: var(--gap-half);
         }
 
+        p {
+          max-width: 60%;
+        }
+
         .cards {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
@@ -63,13 +82,16 @@ export default function How() {
           width: 100%;
           align-content: center;
           justify-items: center;
-          margin: var(--gap) 0 var(--gap-double) 0;
+          margin: var(--gap) 0;
         }
 
         @media (max-width: 850px) {
           .cards {
             grid-template-columns: 1fr;
             grid-row-gap: 80px;
+          }
+          p {
+            max-width: 70%;
           }
         }
       `}</style>
