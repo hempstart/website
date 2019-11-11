@@ -6,11 +6,11 @@ export default function How() {
     <section id="how">
       <div className="inner">
         <h5 className="label">How we solve the problem</h5>
-        <h2>We turn cannabis into cash, and cash into cannabis.</h2>
+        <h2>We turn hemp into cash, and cash into hemp.</h2>
         <p>
-          Investing in the cannabis industry is not difficult, but since it’s
-          a new environment there are lots of fine print that you will need to
-          take into consideration. We provide safe paths for you to start your
+          Investing in the hemp industry is not difficult, but since it’s a new
+          environment there are lots of fine print that you will need to take
+          into consideration. We provide safe paths for you to start your
           business in the industry, grow with us.
         </p>
         <div className="cards">

@@ -23,9 +23,7 @@ export default function Footer() {
         </svg>
         <div className="text">
           <h3>Do you want to talk?</h3>
-          <p>
-            Let’s schedule a meeting through Calendly. We’re born to grow.
-          </p>
+          <p>Let’s schedule a meeting through Calendly. We’re born to grow.</p>
         </div>
         <Button secondary>Schedule a meeting</Button>
       </div>
@@ -35,7 +33,7 @@ export default function Footer() {
         <div className="social" />
         <p>
           We’re an organization that incubates, develops, and partners with
-          category leaders within the cannabis sector.
+          category leaders within the hemp sector.
         </p>
       </footer>
       <style jsx>{`

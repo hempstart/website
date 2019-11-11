@@ -6,7 +6,7 @@ export default function Team() {
       <h5 className="label">Our Team</h5>
       <h2>
         We’re an organization that incubates, develops, and partners with
-        category leaders within the cannabis sector.
+        category leaders within the hemp sector.
       </h2>
       <div className="content">
         <figure className="desktop-only">

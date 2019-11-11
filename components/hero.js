@@ -5,7 +5,7 @@ export default function Hero() {
     <section>
       <h1>Born to Grow</h1>
       <p>
-        We help entrepreneurs on obtaining Hemp and Cannabis Licenses, and build
+        We help entrepreneurs on obtaining Hemp and Related Licenses, and build
         related businesses, shaping this industry’s future by aspiring for
         constant evolution in products, places, and people.
       </p>

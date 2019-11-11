@@ -6,15 +6,14 @@ export default function Services() {
     <section id="services">
       <div className="inner">
         <h5 className="label">Our Services</h5>
-        <h2>Hemp & Cannabis Consulting Services</h2>
+        <h2>Hemp & Related Consulting Services</h2>
         <p>
           Most of the United States now contain at least some form of medical or
           adult use cannabis law. Because of this, traditional business
           challenges emerge, such as operational efficiency, quality control,
           regulatory compliance and market penetration. Hempstart provides both
-          cannabis consulting and auxiliary services to meet your current and
-          future needs. When it’s time to grow, we provide the proper
-          environment.
+          hemp consulting and auxiliary services to meet your current and future
+          needs. When it’s time to grow, we provide the proper environment.
         </p>
         <ServicesGrid />
       </div>

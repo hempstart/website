@@ -18,7 +18,7 @@ export default class HempstartDoc extends Document {
           <meta name="subject" content="Born to Grow" />
           <meta
             name="description"
-            content="To shape the cannabis industry’s future by striving for constant evolution in products, places, and people."
+            content="To shape the hemp industry’s future by striving for constant evolution in products, places, and people."
           />
           <link rel="canonical" href="https://hempstart.co" />
           <meta name="referrer" content="no-referrer" />
@@ -55,7 +55,7 @@ export default class HempstartDoc extends Document {
           <meta property="og:title" content="Born to grow" />
           <meta
             property="og:description"
-            content="To shape the cannabis industry’s future by striving for constant evolution in products, places, and people."
+            content="To shape the hemp industry’s future by striving for constant evolution in products, places, and people."
           />
           <meta property="og:url" content="https://hempstart.co" />
           <meta property="og:site_name" content="Born to Grow | hempstart.co" />
@@ -68,7 +68,7 @@ export default class HempstartDoc extends Document {
           <meta name="twitter:card" content="summary" />
           <meta
             name="twitter:description"
-            content="To shape the cannabis industry’s future by striving for constant evolution in products, places, and people."
+            content="To shape the hemp industry’s future by striving for constant evolution in products, places, and people."
           />
           <meta name="twitter:title" content="Born to Grow | hempstart.co" />
           <meta

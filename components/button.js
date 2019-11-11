@@ -6,7 +6,7 @@ const onClick = () => {
   )
 }
 
-function Button({ action, children, secondary = false, type }) {
+function Button({ action, children, secondary = false, type, minimal }) {
   return (
     <button type={type} onClick={action ? action : onClick}>
       {children}
@@ -24,6 +24,9 @@ function Button({ action, children, secondary = false, type }) {
           line-height: 1em;
           transition: opacity 200ms ease;
           cursor: pointer;
+          ${minimal
+            ? "vertical-align: baseline; text-decoration: underline; padding: 0; color: inherit;letter-spacing: 0; text-transform: none; font-weight: inherit; background: none; font-size: calc(18px + (24 - 18) * (100vw - 375px) / (1920 - 375)); line-height: 1.5em; margin: 0; font-family: 'Futura New Book';"
+            : ""}
         }
 
         button:hover {

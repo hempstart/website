@@ -1,3 +1,5 @@
+import Button from "./button"
+
 export default function ServicesGrid() {
   return (
     <section>
@@ -51,10 +53,10 @@ export default function ServicesGrid() {
             />
           </svg>
         </figure>
-        <h5>Growth Tricks</h5>
+        <h5>Grow together</h5>
         <p>
-          We will assist you in applying the best practices to improve the
-          quality of your final product.
+          We will assist you in applying the best practices to source and grow
+          your company.
         </p>
       </aside>
       <aside>
@@ -78,10 +80,10 @@ export default function ServicesGrid() {
             />
           </svg>
         </figure>
-        <h5>Management</h5>
+        <h5>Seed Bank</h5>
         <p>
-          Develop strategies, curate the content, design unmissable campaigns.
-          We have you covered.
+          Hempstart is very well invested in the seed bank,{" "}
+          <Button minimal>Ask more</Button>
         </p>
       </aside>
       <aside>
@@ -99,7 +101,7 @@ export default function ServicesGrid() {
         </figure>
         <h5>How to stand out</h5>
         <p>
-          We will support you to create an ambitious, Hemp & Cannabis business
+          We will support you to create an ambitious, Hemp & related business
           strategy minimizing weaknesses and maximizing strengths.
         </p>
       </aside>
