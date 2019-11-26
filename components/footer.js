@@ -2,7 +2,7 @@ import Button from "./button"
 import Isologo from "./isologo"
 import Nav from "./nav"
 
-export default function Footer() {
+function Footer() {
   return (
     <section>
       <div className="cta">
@@ -103,3 +103,5 @@ export default function Footer() {
     </section>
   )
 }
+
+export default Footer

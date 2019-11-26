@@ -12,9 +12,9 @@ const sendEmail = e => {
   const badBot = document.getElementsByClassName("please-dont")[0].checked
 
   const values = {
-    name: name,
-    email: email,
-    message: message
+    name,
+    email,
+    message
   }
 
   if (!badBot) {
@@ -32,7 +32,8 @@ const sendEmail = e => {
     alert("Bad bad bot!")
   }
 }
-export default function Contact() {
+
+function Contact() {
   return (
     <section id="contact">
       <h2>Contact us</h2>
@@ -186,3 +187,5 @@ export default function Contact() {
     </section>
   )
 }
+
+export default Contact

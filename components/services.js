@@ -1,7 +1,6 @@
-import Button from "./button"
 import ServicesGrid from "./services-grid"
 
-export default function Services() {
+function Services() {
   return (
     <section id="services">
       <div className="inner">
@@ -68,3 +67,5 @@ export default function Services() {
     </section>
   )
 }
+
+export default Services

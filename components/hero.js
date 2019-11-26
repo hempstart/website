@@ -1,12 +1,12 @@
 import Button from "./button"
 
-export default function Hero() {
+function Hero() {
   return (
     <section>
       <h1>Born to Grow</h1>
       <p>
-        We help entrepreneurs on obtaining Hemp and Related Licenses, and build
-        related businesses, shaping this industry’s future by aspiring for
+        We help entrepreneurs on obtaining Hemp Related Licenses, and build
+        businesses around them. Shaping this industry’s future by aspiring for
         constant evolution in products, places, and people.
       </p>
       <Button secondary>Schedule a meeting</Button>
@@ -66,3 +66,5 @@ export default function Hero() {
     </section>
   )
 }
+
+export default Hero

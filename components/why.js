@@ -1,7 +1,7 @@
 import TextLoop from "react-text-loop"
 import Button from "./button"
 
-export default function Why() {
+function Why() {
   return (
     <section id="why">
       <div className="title">
@@ -9,7 +9,10 @@ export default function Why() {
         <h2>
           Highly profitable cannabis business needs{" "}
           <span className="highlight">
-            <TextLoop children={["planification", "strategy"]} />
+            <TextLoop interval={5000} mask>
+              <span>planification</span>
+              <span>strategy</span>
+            </TextLoop>
           </span>
         </h2>
         <p>
@@ -176,3 +179,5 @@ export default function Why() {
     </section>
   )
 }
+
+export default Why

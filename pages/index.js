@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react"
 import Head from "next/head"
-import Button from "../components/button"
 import Header from "../components/header"
 import Hero from "../components/hero"
 import Services from "../components/services"
@@ -11,9 +9,6 @@ import Contact from "../components/contact"
 import Footer from "../components/footer"
 
 function Index() {
-  const [date, setDate] = useState([])
-  useEffect(() => {}, [])
-
   return (
     <main>
       <Head>

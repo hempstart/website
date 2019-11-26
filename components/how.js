@@ -1,7 +1,6 @@
-import Button from "./button"
 import Card from "./card"
 
-export default function How() {
+function How() {
   return (
     <section id="how">
       <div className="inner">
@@ -98,3 +97,5 @@ export default function How() {
     </section>
   )
 }
+
+export default How

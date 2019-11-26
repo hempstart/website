@@ -1,4 +1,4 @@
-export default function Card({ image, alt, caption, text }) {
+function Card({ image, alt, caption, text }) {
   return (
     <figure>
       <svg
@@ -108,3 +108,5 @@ export default function Card({ image, alt, caption, text }) {
     </figure>
   )
 }
+
+export default Card

@@ -2,7 +2,7 @@ import Logo from "./logo"
 import Nav from "./nav"
 import MobileMenu from "./mobile-menu"
 
-export default function Header() {
+function Header() {
   return (
     <header>
       <Logo />
@@ -40,3 +40,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header

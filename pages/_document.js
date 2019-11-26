@@ -1,10 +1,10 @@
-import Document, { Head, Main, NextScript } from "next/document"
+import Document, { Html, Head, Main, NextScript } from "next/document"
 import React from "react"
 
-export default class HempstartDoc extends Document {
+class HempstartDoc extends Document {
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           <meta name="google-site-verification" content="" />
           <meta charSet="utf-8" />
@@ -81,7 +81,9 @@ export default class HempstartDoc extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }
+
+export default HempstartDoc

@@ -1,6 +1,6 @@
 import Button from "./button"
 
-export default function ServicesGrid() {
+function ServicesGrid() {
   return (
     <section>
       <aside>
@@ -156,3 +156,5 @@ export default function ServicesGrid() {
     </section>
   )
 }
+
+export default ServicesGrid

@@ -1,6 +1,6 @@
 import Button from "./button"
 
-export default function Nav({ noCta = false }) {
+function Nav({ noCta = false }) {
   return (
     <nav>
       <ul>
@@ -67,3 +67,5 @@ export default function Nav({ noCta = false }) {
     </nav>
   )
 }
+
+export default Nav

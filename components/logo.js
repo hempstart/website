@@ -1,4 +1,4 @@
-export default function Logo({ color = "#006341" }) {
+function Logo({ color = "#006341" }) {
   return (
     <>
       <svg
@@ -48,3 +48,5 @@ export default function Logo({ color = "#006341" }) {
     </>
   )
 }
+
+export default Logo

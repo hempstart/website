@@ -1,11 +1,17 @@
 import React, { useState } from "react"
-import Button from "../components/button"
+import Button from "./button"
 
-export default function MobileMenu() {
+function MobileMenu() {
   const [open, toggleOpen] = useState(false)
+
   return (
     <div
+      role="menu"
       className={open ? "menu open" : "menu"}
+      tabIndex={0}
+      onKeyDown={() => {
+        toggleOpen(!open)
+      }}
       onClick={() => {
         toggleOpen(!open)
       }}
@@ -82,3 +88,5 @@ export default function MobileMenu() {
     </div>
   )
 }
+
+export default MobileMenu

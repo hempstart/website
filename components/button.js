@@ -1,3 +1,5 @@
+import cn from "classnames"
+
 const onClick = () => {
   window.open(
     "https://calendly.com/hempstart",
@@ -6,16 +8,18 @@ const onClick = () => {
   )
 }
 
-function Button({ action, children, secondary = false, type, minimal }) {
+function Button({ action, children, secondary = false, minimal }) {
   return (
-    <button type={type} onClick={action ? action : onClick}>
+    <button
+      className={cn({ minimal, secondary })}
+      type="button"
+      onClick={action || onClick}
+    >
       {children}
       <style jsx>{`
         button {
-          background: ${secondary
-            ? "var(--background);"
-            : "var(--color-primary);"};
-          color: ${secondary ? "var(--color-primary);" : "var(--background);"};
+          background: var(--color-primary);
+          color: var(--background);
           text-transform: uppercase;
           font-size: 14px;
           font-weight: 800;
@@ -24,9 +28,26 @@ function Button({ action, children, secondary = false, type, minimal }) {
           line-height: 1em;
           transition: opacity 200ms ease;
           cursor: pointer;
-          ${minimal
-            ? "vertical-align: baseline; text-decoration: underline; padding: 0; color: inherit;letter-spacing: 0; text-transform: none; font-weight: inherit; background: none; font-size: calc(18px + (24 - 18) * (100vw - 375px) / (1920 - 375)); line-height: 1.5em; margin: 0; font-family: 'Futura New Book';"
-            : ""}
+        }
+
+        button.secondary {
+          background: var(--background);
+          color: var(--color-primary);
+        }
+
+        button.minimal {
+          vertical-align: baseline;
+          text-decoration: underline;
+          padding: 0;
+          color: inherit;
+          letter-spacing: 0;
+          text-transform: none;
+          font-weight: inherit;
+          background: none;
+          font-size: calc(18px + (24 - 18) * (100vw - 375px) / (1920 - 375));
+          line-height: 1.5em;
+          margin: 0;
+          font-family: "Futura New Book";
         }
 
         button:hover {
