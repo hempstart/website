@@ -20,7 +20,7 @@ function Team() {
             penetration.
           </p>
           <figure className="mobile-only">
-            <img src="/static/images/team/babar.png" alt="" />
+            <img src="/static/images/team/babar.jpg" alt="" />
           </figure>
           <h4>Babar Khan</h4>
           <h5>Founder and Advisor</h5>
