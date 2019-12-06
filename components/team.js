@@ -10,7 +10,7 @@ function Team() {
       </h2>
       <div className="content">
         <figure className="desktop-only">
-          <img src="/static/images/team/babar.png" alt="" />
+          <img src="/static/images/team/babar.jpg" alt="" />
         </figure>
         <figcaption>
           <p>
