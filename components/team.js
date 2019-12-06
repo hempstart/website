@@ -10,7 +10,7 @@ function Team() {
       </h2>
       <div className="content">
         <figure className="desktop-only">
-          <img src="/static/images/team/babar.jpg" alt="" />
+          <img src="/static/images/team/baba.jpg" alt="" />
         </figure>
         <figcaption>
           <p>
@@ -20,9 +20,9 @@ function Team() {
             penetration.
           </p>
           <figure className="mobile-only">
-            <img src="/static/images/team/babar.jpg" alt="" />
+            <img src="/static/images/team/baba.jpg" alt="" />
           </figure>
-          <h4>Babar Khan</h4>
+          <h4>Baba Khan</h4>
           <h5>Founder and Advisor</h5>
           <Button>Schedule a meeting</Button>
         </figcaption>
